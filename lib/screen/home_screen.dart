@@ -50,9 +50,19 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void reStart(){
+    setState(() {
+      totalSeconds=twentyFiveMinutes;
+      format(totalSeconds);
+      totalPomodoros=0;
+      onPausePressed();
+    });
+
+
+  }
+
   String format(int seconds){
     var duration =Duration(seconds: seconds);
-    // print(duration.toString().split(".").first.substring(2,7)); test
     return duration.toString().split(".").first.substring(2,7);
   }
 
@@ -76,21 +86,38 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Flexible(
-            flex: 3,
-            child: Center(
-              child: IconButton(
-                iconSize: 120,
-                color: Theme.of(context).cardColor,
-                onPressed: isRunning ?
-                onPausePressed :
-                onStartPressed,
-
-                icon: Icon(isRunning ?
-                Icons.pause_circle_filled_outlined :
-                Icons.play_circle_fill_outlined),
-              ),
+            flex: 1,
+            child: Container(),
+          ),
+          Flexible(
+            flex: 2,
+            child: Column(
+              children: [
+                Center(
+                  child: IconButton(
+                    iconSize: 120,
+                    color: Theme.of(context).cardColor,
+                    onPressed: isRunning ?
+                    onPausePressed :
+                    onStartPressed,
+                    icon: Icon(isRunning ?
+                    Icons.pause_circle_filled_outlined :
+                    Icons.play_circle_fill_outlined),
+                  ),
+                ),
+                Center(
+                  child: IconButton(
+                    iconSize: 100,
+                    color: Theme.of(context).cardColor,
+                    onPressed: reStart,
+                    icon: Icon(
+                    Icons.restart_alt_outlined),
+                  ),
+                ),
+              ],
             )
           ),
+
           Flexible(
             flex: 1,
             child: Row(
