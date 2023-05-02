@@ -1,7 +1,14 @@
 # pomodoro
 
 A Flutter Timer project
+    
+    * displays time, start/stop button, reset button, number of cycle
+    * start button : starts timer
+    * stop button : stops timer
+    * restart button : reset timer, pormodoro count
 
+    * /MyFlutter/Pormodoro
 
+Result image
 
-/Users/[name]/Desktop/workspace/MyFlutter/Pormodoro
+    * /MyFlutter/Pormodoro/lib/photo/Simulator Screenshot - iPhone 14 Pro Max - 2023-05-02 at 23.55.52.png
