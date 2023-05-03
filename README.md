@@ -11,4 +11,4 @@ A Flutter Timer project
 
 Result image
 
-    * /MyFlutter/Pormodoro/lib/photo/Simulator Screenshot - iPhone 14 Pro Max - 2023-05-02 at 23.55.52.png
+    * /MyFlutter/Pormodoro/lib/photo/
