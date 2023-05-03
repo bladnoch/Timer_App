@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:pomodoro/screen/home_screen.dart';
 
+/// main.dart : Timer that counts 50 min
+/// @version v0.1
+/// @since 5/2/2023
+/// @author Dounguk Kim
+
 void main() {
   runApp(const MyApp());
 }

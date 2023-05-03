@@ -1,7 +1,10 @@
 import 'dart:async';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+/// home_screen.dart : includes timer functions
+/// @version v0.1
+/// @since 5/2/2023
+/// @author Dounguk Kim
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
