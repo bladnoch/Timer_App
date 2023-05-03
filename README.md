@@ -1,4 +1,4 @@
-# pomodoro
+# Timer_App
 
 A Flutter Timer project
     
