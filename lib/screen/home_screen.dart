@@ -76,13 +76,13 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           Flexible(
-            flex: 1,
+            flex: 2,
             child: Container(
               alignment: Alignment.bottomCenter,
               child: Text(
                 format(totalSeconds),
                 style: TextStyle(color: Theme.of(context).cardColor,
-                fontSize: 89,
+                fontSize: 90,
                   fontWeight: FontWeight.w600,
                 ),
               ),
